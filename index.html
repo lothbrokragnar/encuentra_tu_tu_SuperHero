@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- GoogleFonts -->
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- titulo -->
+    <title>SuperHero</title>
+</head>
+
+<body>
+    <!------------------- NAVBAR ---------------------->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/favicon.ico" alt="" class="d-inline-block align-text-top">
+                SuperHero
+            </a>
+        </div>
+    </nav>
+
+    <!------------------- HEADER ---------------------->
+    <header>
+        <div class="header-container d-flex flex-column align-content-center">
+            <img src="assets/img/sh1.jpg" alt="" class="header-image align-self-center my-2">
+            <div class="header-search w-75 align-self-center">
+                <h2 class="header-search__title my-3">Encuentra tu SuperHero</h2>
+                <form id="form" class="d-flex flex-column">
+                    <label class="my-3">Ingresa el <a href="https://www.superheroapi.com/ids.html" target="_blank" style="color: inherit;">número del SuperHero</a> a buscar</label>
+                    <!-- Value used to search through the API -->
+                    <input id="sp_number" type="number" class="my-3" style="width: auto;">
+                    <div class="d-flex">
+                        <!-- Button used to launch the search through the API -->
+                        <button id="submit" type="submit" class="btn btn-danger" style="width: 80px;"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Ingresa un numero entre 1 y 731">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!------------------- ARTICLE ---------------------->
+    <!-- Tag that the information requested from the API will be displayed -->
+    <article id="summary">
+    </article>
+
+    <!------------------- JavaScript ---------------------->
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CANVAS -->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+    <!-- hoja de JavaScript -->
+    <script src="assets\js\app.js"></script>
+
+</body>
+
+</html>
